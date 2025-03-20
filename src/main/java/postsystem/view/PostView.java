@@ -26,6 +26,10 @@ public class PostView {
             } else if (command.equals("삭제")) {
                 PostController.deletePost();
 
+            } else if (command.equals("수정")) {
+                PostController.editPost();
+            } else if (command.equals("목록")) {
+                PostController.showAllPosts();
             } else {
                 System.out.println("\n존재하지 않는 명령어입니다.\n");
             }
